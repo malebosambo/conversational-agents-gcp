@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function CX() {
 
   return (
@@ -7,7 +9,8 @@ export default function CX() {
         <hr /><br />
         <p>The chatbot on this page has been implemented using an iframe.</p>
       </div>
-      <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+      
+      <Script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js" strategy="lazyOnload" />
       <df-messenger
         location="europe-west2"
         project-id="sustained-drake-419306"

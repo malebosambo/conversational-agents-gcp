@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function Home() {
   
   return (
@@ -7,7 +9,8 @@ export default function Home() {
         <hr /><br />
         <p>The chatbot on this page has been implemented using an iframe.</p><br />
       </div>
-      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+      <Script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" strategy="lazyOnload" />
       <df-messenger
         intent="WELCOME"
         chat-title="XM Bot"
