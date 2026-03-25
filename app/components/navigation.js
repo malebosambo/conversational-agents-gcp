@@ -7,7 +7,7 @@ export default function Navigation() {
       <div className="Menu">
         <Link href="/">ES</Link>
         <Link href="/cx">CX</Link>
-        <Link href="/nodejs-lib">Node.js</Link>
+        <Link href="/rest-api">API</Link>
       </div>
       
     </>
